@@ -1,0 +1,38 @@
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo {
+    height: 20vh;
+    padding: 0 0 0 2vw;
+    position: absolute;
+    top: 7vh;
+    z-index: 2;
+}
+
+h1{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    z-index: 3;
+}
+h1>a{
+    list-style-type: none;
+    color: white;
+}
