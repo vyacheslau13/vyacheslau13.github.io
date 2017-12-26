@@ -28,11 +28,38 @@ video {
 h1{
     display: inline-block;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     right: 20px;
     z-index: 3;
+ 
+}
+.palec{
+    font-family: untitled-font-1;
+    content: 'a';
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 4;
+    right: 155px;
+    
+
+}
+
+.palec:before{
+    content: 'a';
+}
+body>div{
+    transition: all 1s;
+    
+}
+body:hover .palec{
+    position: absolute;
+    bottom: 50px;
+    right: 140px;
 }
 h1>a{
     list-style-type: none;
     color: white;
+    text-decoration: none;
 }
