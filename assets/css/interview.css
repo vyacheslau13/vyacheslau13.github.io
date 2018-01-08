@@ -97,6 +97,7 @@ section>ul>li {
 .galery>div{
     position: absolute;
     left: 15%;
+    width: 520px;
 }
 .img {
     width: 20vw;
@@ -121,11 +122,10 @@ footer {
 footer>p{
     display: block;
     color:white;
-    position:absolute;
+    position:relative;
     width: 180px;
     right: 2vw;
     top: 0;
-    padding: 1px 1px 2px 3px;
     
 }
 .up{
@@ -311,8 +311,9 @@ footer>p{
     color:white;
     position:absolute;
     width: 180px;
+    right: 2vw;
     top: 3vh;
-    right: -3vw;
+    
     
 }
 .up{
@@ -335,6 +336,7 @@ footer>p{
     text-decoration: none;
 
 }
+
 .vkm>iframe{
         width: 300px;
         height: 200px;
@@ -415,7 +417,6 @@ footer>p{
     display: block;
     width: 35px;
     position: relative;
-    top: 0;
     left: 40%;
     font-size: 4ex;
     color: white;
