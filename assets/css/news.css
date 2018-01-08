@@ -87,6 +87,7 @@ section>ul {
 }
 
 section>ul>li {
+    height: 70vh;
     list-style: none;
     border: solid black 5px;
     border-radius: 10px;
