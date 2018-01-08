@@ -28,8 +28,8 @@ video {
 h1{
     display: inline-block;
     position: absolute;
-    bottom: 30px;
-    right: 20px;
+    top: 250px;
+    right: 2%;
     z-index: 3;
  
 }
@@ -39,15 +39,15 @@ h1{
     color: white;
     font-size: 30px;
     position: absolute;
-    bottom: 50px;
+     top:280px;
     z-index: 4;
-    right: 155px;
+    right: 200px;
     
 
 }
 
 .palec:before{
-    content: 'a';
+    content: '*';
 }
 body>div{
     transition: all 1s;
@@ -55,11 +55,73 @@ body>div{
 }
 body:hover .palec{
     position: absolute;
-    bottom: 50px;
-    right: 140px;
+    top: 280px;
+    right: 160px;
 }
 h1>a{
     list-style-type: none;
     color: white;
     text-decoration: none;
+}
+.background{
+    display: none;
+    background-image: url('../img/smallback.jpg');
+}
+
+@media screen and (max-width: 320px) {
+    video{
+        display: none;
+    }
+    .background{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 30%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .logo{
+        position: absolute;
+        top: 0px;
+        left:0px;
+    }
+    h1>a{
+        position: absolute;
+        top: 10vh;
+        left: -65vw;
+    }
+    .palec{
+        display:none;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    body{
+        height:100%
+    }
+       video{
+        display: none;
+    }
+    .background{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 30%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .logo{
+        position: absolute;
+        top: 0px;
+        left:0px;
+    }
+    h1>a{
+        position: absolute;
+        top: 23vh;
+        left: -65vw;
+    }
+    .palec{
+        display:none;
+    }
 }
