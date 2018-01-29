@@ -5,7 +5,6 @@ body {
 header {
     display: inline block;
     width: 100%;
-    height: 20vh;
     background-image: url(../img/logos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,10 +23,10 @@ header {
 main {
     display: block;
     width: 100%;
-    height: 90vh;
+    max-width: 3000px;
     background-image: url("../img/fun.jpg");
-    background-repeat: no-repeat;
-    background-size: 50%;
+    background-repeat: repeat;
+    background-size: 100%;
     position: relative;
     top: -1vh;
     -webkit-box-shadow: 0 0 0 2px white;
@@ -38,15 +37,13 @@ main {
 nav {
     display: block;
     width: 15vw;
-    height: 6vh;
     margin-top: 10px;
     position: relative;
     top: 10px;
-
 }
 
 nav>ul {
-    list-style: none;
+ p/   list-style: none;
     padding: 0;
 }
 
@@ -73,9 +70,8 @@ nav>ul>li>a {
 section {
     display: block;
     width: 60vw;
-    height: 50vh;
-    position: absolute;
-    top: 7vh;
+    position: relative;
+    top: -45vh;
     left: 20vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +80,6 @@ section {
 }
 
 section>ul {
-    position: absolute;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -122,11 +117,10 @@ section>ul>li>p::after {
 
 
 footer {
-    display: inline block;
+    display: block;
     width: 100%;
-    height: 20vh;
     position: relative;
-    bottom: 0;
+    top: -25px;
     background-color: black;
     -webkit-box-shadow: 0 0 0 2px white;
     box-shadow: 0 0 0 2px white;
@@ -136,12 +130,11 @@ footer {
 }
 
 footer>p {
-    display: block;
+    display: inline-block;
     color: white;
-    position: absolute;
-    width: 180px;
-    right: 2vw;
-    top: 0;
+    position: relative;
+    left: 50%;
+    top: 50%;
 
 }
 
@@ -156,276 +149,180 @@ footer>p {
 
 .navF {
     display: block;
-    width: 15vw;
-    margin: 0;
-    padding: 0;
     position: relative;
-    top: -5vh;
-    left: 5vw;
+    width: 15vw;
+    margin: -95px 0px 0px 10px;
+    padding: 0px 0px 10px;
+
+
 }
 
-.navF>li>a {
+.navF>ul>li>a {
     color: white;
     text-decoration: none;
 }
 
 @media screen and (max-width: 320px) {
-    header {
-        margin: 0;
-        padding: 0;
-        height: 15vh;
-        background: black;
-    }
-    .logo {
-        height: 15vh;
-        position: absolute;
-        top: vh;
-        left: 35vw;
+    .logo{
+        width: 100px;
+        height: 100px;
     }
     nav {
-        margin: 0;
-        padding: 0;
+        top: 0;
         display: block;
         width: 100%;
-        height: 35vh;
-        position: relative;
-        top: 5px;
-        left: 0px;
+        padding: 0;
+        margin: 0px;
 
+    }
+
+    .img {
+        width: 96%;
     }
     nav>ul>li {
-        border: solid black 2px;
-        width:98%;
-        height: 6vh;
-        text-align: center;
-        border-radius: 10px;
-        background-color: black;
-    }
-
-
-    main {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        height: 150vh;
+        margin: 3px;
+        padding: 0px;
     }
     section {
-        margin: 0;
-        padding: 0;
         position: relative;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-    }
-
-footer {
-    display: inline block;
-    width: 100%;
-    height: 15vh;
-}
-footer>p{
-    display: block;
-    color:white;
-    position:absolute;
-    width: 180px;
-    right: 2vw;
-    top: 3vh;
-    
-}
-
-.up{
-    display: block;
-    width: 35px;
-    position: relative;
-    top: 0;
-    left: 40%;
-    font-size: 4ex;
-    color: white;
-}
-.navF{
-    display:block;
-    width: 15vw;
-    position: relative;
-    top: -9vh;
-    left: 5vw;
-}
-.navF>li>a{
-    color: white;
-    text-decoration: none;
-
-}
-}
-@media screen and (min-width: 321px) and (max-width: 560px) {
-    header {
-     margin: 0;
-        padding: 0;
-        height: 15vh;
-        background: black;
-    }
-    .logo {
-        height: 15vh;
-        position: absolute;
-        top: vh;
-        left: 35vw;
-    }
-    nav {
-        margin: 0;
-        padding: 0;
-        display: block;
-        width: 100%;
-        height: 35vh;
-        position: relative;
-        top: 5px;
-        left: 0px;
-
-    }
-   nav>ul>li {
+        top: -20px;
+        left: 2px;
         width: 98%;
-        border: solid black 2px;
-        height: 6vh;
-        text-align: center;
-        border-radius: 10px;
-        background-color: black;
-    }
 
-    main {
-        margin: 0;
-        padding: 0;
+    }
+    section>ul {
+        width: 93vw;
+    }
+    section>ul>li {
+        width: 90vw;
+    }
+    footer {
+        display: block;
         position: relative;
-        height: 170vh;
+        top: -30px;
     }
-    section {
-        margin: 0;
-        padding: 0;
+    footer>p {
+        font-size: 1.4ex;
         position: relative;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        height: 120vh;
+        left: 80px;
+        bottom: 20px;
+
+    }
+    .navF {
+        display: none;
     }
 
+    .up {
+        position: relative;
+        left: 140px;
 
-footer {
-    display: inline block;
-    width: 100%;
-    height: 15vh;
+        font-size: 1.3em;
+    }
 }
-footer>p{
-    display: block;
-    color:white;
-    position:absolute;
-    width: 180px;
-    right: 2vw;
-    top: 3vh;
-    
-    
-}
-.up{
-    display: block;
-    width: 35px;
-    position: relative;
-    left: 40%;
-    font-size: 4ex;
-    color: white;
-}
-.navF{
-    display:block;
-    width: 15vw;
-    position: relative;
-    top: -9vh;
-    left: 5vw;
-}
-.navF>li>a{
-    color: white;
-    text-decoration: none;
 
-}
-}
-@media screen and (min-width: 561px) and (max-width: 800px) {
-   header {
-        margin: 0;
-        padding: 0;
-        height: 15vh;
-        background: black;
-    }
-    .logo {
-        height: 15vh;
-        position: absolute;
-        top: vh;
-        left: 35vw;
-    }
+@media screen and (min-width: 321px) and (max-width: 480px) {
     nav {
-        margin: 0;
-        padding: 0;
+        top: 0px;
         display: block;
         width: 100%;
-        height: 35vh;
-        position: relative;
-        top: 5px;
-        left: 0px;
+        padding: 0;
+        margin: 0;
 
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
     }
     nav>ul>li {
-        border: solid black 2px;
-        width:98%;
-        height: 6vh;
-        text-align: center;
-        border-radius: 10px;
-        background-color: black;
+        margin: 3px;
+    }
+    main {
+        height: 100%;
+
+    }
+    .img {
+        width: 97%;
     }
 
-
-    main {
-        margin: 0;
-        padding: 0;
+    section {
         position: relative;
-        height: 120vh;
+        top: -6px;
+        left: 1%;
+        width: 98%;
+
+    }
+    footer {
+        display: block;
+        position: relative;
+        top: -25px;
+    }
+    footer>p {
+        font-size: 1.8ex;
+        position: relative;
+        left: 30%;
+        bottom: 20px;
+
+    }
+    .navF {
+        display: none;
+    }
+
+    .up {
+        position: relative;
+        left: 45%;
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1300px) {
+    nav {
+        top: 0px;
+        display: inline-block;
+        width: 98%;
+        padding: 0;
+        margin: 0;
+
+    }
+    nav>ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .img {
+        width: 99%;
     }
     section {
-        margin: 0;
-        padding: 0;
         position: relative;
-        top: 10vh;
-        left: 0;
+        top: 20px;
+        left: 0px;
         width: 100%;
-        height: 70vh;
+        font-size: 2.5ex;
+
     }
-   
+    footer {
+        display: block;
+        position: relative;
+        top: -35px;
+    }
+    footer>p {
+        font-size: 2ex;
+        position: relative;
+        left: 30%;
+        bottom: 20px;
 
-footer {
-    display: inline block;
-    width: 100%;
-    height: 15vh;
-}
-footer>p{
-    display: block;
-    color:white;
-    position:absolute;
-    width: 180px;
-    right: 2vw;
-    top: 3vh;
-    
-    
-}
-.up{
-    display: block;
-    width: 35px;
-    position: relative;
-    left: 40%;
-    font-size: 4ex;
-    color: white;
-}
-.navF{
-    display:block;
-    width: 15vw;
-    position: relative;
-    top: -9vh;
-    left: 5vw;
-}
-.navF>li>a{
-    color: white;
-    text-decoration: none;
+    }
+
+    .up {
+        position: relative;
+        left: 45%;
+        font-size: 2em;
+    }
+
+    main {
+        height: 100%;
+    }
+    .navF {
+        display: none;
+    }
 
 }
-}
+
